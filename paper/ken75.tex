@@ -1,6 +1,11 @@
 \documentclass[11pt, letterpaper]{article}
 
+% definitions
+\newcommand{\documentname}{\textsl{Note}}
+
+% spacings
 \linespread{1.09}
+\setlength{\parindent}{1.2\baselineskip}
 \raggedbottom
 \sloppy\sloppypar
 \frenchspacing
@@ -8,26 +13,107 @@
 
 \begin{document}
 
-\section*{The state and future of Galactic archaeology}
+\section*{The state and future of Galactic archaeology%
+\footnote{This \documentname\ is loosely based on remarks I made at
+  \textsl{2016 Elizabeth and Frederick White Research Conference on
+    Galactic Archaeology and Stellar Physics: Understanding the
+    origins of the Galaxy and its stellar content}, held in honor of
+  Ken Freeman (ANU). The meeting took place in Canberra, 2016 November 21--25.}}
 
 \noindent
-\textit{by} {David W. Hogg}\footnote{My affiliations are the
-  \textsl{Center for Cosmology and Particle Physics, Department of
-    Physics, New York University}, the \textsl{Center for Data
-    Science, New York University}, the \textsl{Flatiron Institute, New
-    York City}, and the \textsl{Max-Planck-Institut f\"ur Astronomie,
-    Heidelberg}. This work was partially supported by the NSF (grant
-  AST-1517237), NASA (grant NNX16AC70G), and the Moore--Sloan Data
-  Science Environment at NYU. It is a pleasure to thank Andy Casey
-  (Cambridge), Melissa Ness (MPIA), and Hans-Walter Rix (MPIA) for
-  valuable comments.}
+\textit{by} {David W. Hogg}%
+\footnote{My affiliations are the \textsl{Center for Cosmology and
+    Particle Physics, Department of Physics, New York University}, the
+  \textsl{Center for Data Science, New York University}, the
+  \textsl{Flatiron Institute, New York City}, and the
+  \textsl{Max-Planck-Institut f\"ur Astronomie, Heidelberg}. This work
+  was partially supported by the NSF (grant AST-1517237), NASA (grant
+  NNX16AC70G), and the Moore--Sloan Data Science Environment at
+  NYU. It is a pleasure to thank Andy Casey (Cambridge), Melissa Ness
+  (MPIA), and Hans-Walter Rix (MPIA) for valuable comments.}
 
 \paragraph{abstract:}
 Foo, and bar.
 
-\section{The state and traditions of this field}
+\section{The goals and traditions of this field}
 
-What is Galactic Archaeology?
+What is Galactic Archaeology? The goal of Galactic Archaeology is to
+use the stars that we see in the Milky Way right now (and possibly
+also the dust and gas) to infer the past history of star formation,
+mass assembly, accretion, and orbital evolution of the Milky Way. That
+is, the field would be a complete success if we could show the Milky
+Way as it was---in shape, kinematics, and chemical compositions---at
+various stages in its past, back to the beginning of its formation
+shortly after the Big Bang.
+
+In Galactic Archaeology, we would like to ``run back the clock'' on
+galaxy formation! In some sense this should be impossible: In a
+nonlinear dynamical system, it is impossible to run the clock back
+through many dynamical times accurately! However, in the case of the
+Milky Way, we have many strong beliefs that can help us regularize or
+constrain this inverse problem. One thing we believe is that stars
+have as invariants their surface chemical abundances, from shortly
+after formation until today. This invariance is not exact: There are
+dredge-up and accretion processes that will make adjustments (more
+about this below). But we believe that there is a lot of information
+in surface abundances. Another thing we believe is that stars that
+were born together---in the same molecular cloud, say---will have
+identical or at least similar chemical abundances (more about this
+below). Another is that the Milky Way must have formed from somehow
+``typical'' initial conditions and grown by dynamics that are very
+close to those described by the $\Lambda$CDM model of physical
+cosmology.
+
+Please do not take this last point to be an endorsement of the idea
+that we know everything about the cosmological model, the dark sector,
+and the initial conditions. We don't! Indeed, my own personal
+motivation for pursuing Galactic Archaeology is to put dynamical
+constraints on the cosmological model, the initial conditions, and the
+physical properties of the dark matter. But $\Lambda$CDM is such a
+successful theory for explaining so much data on so many scales, it
+must be at least a \emph{good approximation} to the true theory of
+structure formation in the Universe. That is, any theory that replaces
+$\Lambda$CDM must make near-identical predictions on very large
+scales, and only different-in-detail predictions at small scales, in
+order to be a contender. So whatever the true (or truer) theory of
+physical cosmology, $\Lambda$CDM must be a close approximation to it,
+and will probably be used as a computational surrogate, in the same
+way that Newtonian Gravity is used as a computational surrogate for
+the truer theory of General Relativity. That is, if Galactic
+Archaeology is supremely successful, we will replace $\Lambda$CDM with
+a better theory, and cold dark matter with a more physically rich
+dark-matter theory. But that theory will probably be similar to
+$\Lambda$CDM in its predictions, and probably be much harder to
+simulate or compute.
+
+That brings up an important point for the state of the field and what
+follows in this \documentname: The fundamental theory of cosmology is
+a \emph{computational} theory, a theory that makes predictions only
+after enormously complex and computationally expensive simulations
+have been run. These simulations involve brutal approximations and are
+always resolution-limited. How can we make precise inferences in this
+context?  Much work on Galactic Archaeology makes only indirect---or
+no---use of the theory of galaxy formation. However, the part that
+\emph{does} make use of theory falls into two general camps (and, of
+course, many investigators sit in both camps): In one camp, the
+approach is to simulate in gory detail as many Milky-Way-like galaxies
+as you can, as realistically as you can (and typical projects can
+simulate 4 to 20 of them!), and look at the properties of our own
+Milky Way in the context of the equivalent properties of these
+simulated exemplars. That is important for building intuition, but
+it doesn't answer quantitative questions, or not with great precision.
+
+In the other camp, the approach is to make analytic models (still
+computational, but the computation is solving equations, not running a
+simulation) that explain parts of the data, and in which true
+inference can proceed. These models are usually regular (as in: no
+chaotic orbits) and always simplistic (none of the phase-space
+complexity of a $\Lambda$CDM simulation), but they permit parameter
+estimation and hypothesis testing with all the precision that Bayes or
+frequentism permits. There is a trade-off here between comparing the
+Milky Way to our best beliefs (which are expressed by simulations) or
+to our most tractable models (which permit precise measurements). This
+isn't a resolved issue as of today. I will say more below.
 
 What is chemical tagging?
 
