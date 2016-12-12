@@ -1,7 +1,19 @@
+% This project is part of the Ken75 project.
+% Copyright 2016 David W. Hogg (NYU) (MPIA) (Flatiron)
+
+% # to-do
+% - write first draft
+% - pack it full of citations
+
+% # style notes
+% - Capitalize Hubble Time, Galactic Archaeology, Newtonian Gravity, and tha like.
+% - Lighten up on the footnotes; not so earnest!
+
 \documentclass[11pt, letterpaper]{article}
 
 % definitions
 \newcommand{\documentname}{\textsl{Note}}
+\newcommand{\footnotename}[1]{\textsl{footnote}~\footnotemark[\ref{#1}]}
 
 % spacings
 \linespread{1.09}
@@ -13,20 +25,20 @@
 
 \begin{document}
 
-\section*{The state and future of Galactic archaeology%
+\section*{The state and future of Galactic Archaeology%
 \footnote{This \documentname\ is loosely based on remarks I made at
   \textsl{2016 Elizabeth and Frederick White Research Conference on
     Galactic Archaeology and Stellar Physics: Understanding the
     origins of the Galaxy and its stellar content}, held in honor of
-  Ken Freeman (ANU). The meeting took place in Canberra, 2016 November 21--25.}}
+  Ken Freeman (ANU). The meeting took place in Canberra, 2016 November 21--25.\label{foot:conference}}}
 
 \noindent
 \textit{by} {David W. Hogg}%
 \footnote{My affiliations are the \textsl{Center for Cosmology and
-    Particle Physics, Department of Physics, New York University}, the
-  \textsl{Center for Data Science, New York University}, the
-  \textsl{Flatiron Institute, New York City}, and the
-  \textsl{Max-Planck-Institut f\"ur Astronomie, Heidelberg}. My email address
+    Particle Physics} in the \textsl{Department of Physics} at \textsl{New York University}, the
+  \textsl{Center for Data Science} at \textsl{New York University}, the
+  \textsl{Flatiron Institute} in New York City, and the
+  \textsl{Max-Planck-Institut f\"ur Astronomie} in Heidelberg. My email address
   is easy to find on the internets.
   
   This work
@@ -157,8 +169,8 @@ dynamical tags---ought to be far more informative about the formation
 and evolution of the Milky Way than either taken alone. This is a
 statement, in a sense, of the goal of Galactic Archaeology.  And it
 must be true to some extent in the case of chaotic potentials
-too.\footnote{The Lyapunov times in the halo, at least, can easily
-  become comparable to the Hubble time (CITE). In this case, although
+too.\footnote{The Lyapunov Times in the halo, at least, can easily
+  become comparable to the Hubble Time (CITE). In this case, although
   there aren't strictly invariant actions, there ought to be
   approximate surrogate invariants good for many Gyr.} It is
 \emph{not} the specific meaning, however, of the name ``chemical
@@ -185,11 +197,11 @@ In the ideal, non-parametric\footnote{I am using the word
   models whose size and complexity grows linearly with the data.}
 chemical-tagging procedure would have the molecular clouds exist as
 latent objects\footnote{HOGG DEFINE LATENT} in the model, revealed
-only by the coincidence of chemical tags across stars. The naive way
+only by the coincidence of chemical tags across stars. The na\"ive way
 to think about it is the following: As each star gets measured, it
 either gets assigned to a known birth event (known from previous
 stellar observations), or else it gets assigned to a new birth event,
-previously unknown.
+previously unknown (and now with one assigned star).
 
 The exciting (to me) prospect of chemical tagging is that it could
 provide most value exactly when the potential is \emph{not}
@@ -198,9 +210,54 @@ It is exactly then that the discovery of stellar births becomes
 difficult (or maybe impossible) from dynamical considerations alone;
 chemistry could provide the missing data.
 
-The two questions of chemical tagging.
+Chemical tagging only works by the na\"ive approach above if we can
+answer two hard questions, and, furthermore, that those two hard
+questions give us answers of the kind we want. The two questions of
+chemical tagging are the following: \textbf{(1)}~Given two stars that
+were formed at the same birth event, how different can their detailed
+chemical abundances be? and \textbf{(2)}~Given two stars that were
+\emph{not} formed at the same birth event, how \emph{similar} can
+their detailed chemical abundances be? The na\"ive approach to
+chemical tagging only works if the answers to these two questions
+don't overlap in bad ways.
+
+Of course we aren't doomed if the answers come out bad; we just have
+work harder. More on this below. For now, let's be optimistic, because
+it makes the program easier to talk about. We will deal with the
+pessimistic regime towards the end of this \documentname.
 
 \section{The birthday paradox}
+
+At the meeting at which I made (some of) these remarks,\footnote{See
+  \footnotename{foot:conference}.} I challenged the principals in
+various very, very large spectroscopic surveys (CITE AWAY) to explain
+to me why, if we have 300,000 stars with excellent spectra, why we
+need 500,000 more (let alone millions more).\footnote{I also
+  acknowledged that I am guilty of helping and proposing such
+  projects; I am part of the problem here.} What questions can be
+answered with 800,000 stars that can't be answered with 300,000? 
+
+Of course I myself do have an answer to this question. It is up to my
+loyal reader whether the answer is worth the cost of these large
+programs, which tie up world-class facilities for years at a time.  My
+answer is that the present-day configuration-space layout of stars
+that were formed together in common birth events is likely to be
+(perhaps even \emph{known} to be) very dilute and complex. That means
+that it might take one heck of a lot of well observed stars before we
+start finding chemical-tagging matched pairs in large numbers. And the
+scaling of discoveries with sample size is extremely good:
+
+I am an afficionado of data-analysis situations where the scaling is
+better than $\sqrt{n}$. That is, when can you take four times as much
+telescope time and learn more than twice as much as you knew before?
+Indeed, in some sense, you can see much of what I say from here on in
+this \documentname\ as addressing this question, in one form or
+another, as it applies to Galactic Archaeology... proper
+motions... time-domain... exceedingly rare objects... qualitatively
+new observation types!
+
+Excitingly for me and for the field of Galactic Archaeology, chemical
+tagging is one of these situations...
 
 The paradox and what you can learn.
 
@@ -208,13 +265,15 @@ Numbers of stars; scaling.
 
 \section{What are the biggest problems with this field?}
 
-Spectroscopy and its discontents.
-
 Story time!
 
-Open science---and the lack thereof.
+So many spectra, so little understanding of chemical space, or anything else.
 
-\section{New modes of observing}
+Spectroscopy and its discontents.
+
+And looking only at the Milky Way!
+
+Open science---and the lack thereof.
 
 \section{New modes of modeling}
 
@@ -226,7 +285,7 @@ What you gain and lose in both cases.
 
 Criticize machine learning and bolster The Cannon.
 
-\section{Probabilistic methods}
+\section{Probabilistic thinking}
 
 Pessimistic regime of chemical tagging; mixture models; hierarchical models.
 
